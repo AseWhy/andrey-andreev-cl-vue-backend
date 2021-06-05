@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+    backend:
+        image: backend
+        restart: unless-stopped
+        build: ./
+        depends_on: 
+            - 'mongo'
+        ports:
+            - "8080:8080"
+    mongo:
+        container_name: mongo
+        image: mongo
+        ports:
+            - "27017:27017"

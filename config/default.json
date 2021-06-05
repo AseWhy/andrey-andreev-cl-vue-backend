@@ -1,0 +1,10 @@
+{
+    "jwt-secret": "(#uWbS)D97bT#pZq;gm%NmGKSW29D@5w",
+    "port": 8080,
+    "mongodb": {
+        "socketTimeoutMS": 30000,
+        "keepAlive": true,
+        "reconnectTries": 30000,
+        "useNewUrlParser": true
+    }
+}
